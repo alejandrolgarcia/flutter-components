@@ -18,7 +18,7 @@ class Listview1Screen extends StatelessWidget {
                 children: [
 
                     ...options.map( 
-                        (planeta) =>  planetas(planeta)
+                        (planeta) =>  _planetas(planeta)
                     ).toList()
 
                     // ListTile(
@@ -33,7 +33,7 @@ class Listview1Screen extends StatelessWidget {
     }
 }
 
-planetas(String planeta) {
+_planetas(String planeta) {
     return ListTile(
         // leading: const Icon( Icons.list_outlined ),
         title: Text(planeta),

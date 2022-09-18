@@ -18,7 +18,7 @@ class Listview2Screen extends StatelessWidget {
 
             body: ListView.separated(
                 itemCount: options.length,
-                itemBuilder:(context, index) => planetas(options[index]), 
+                itemBuilder:(context, index) => _planetas(options[index]), 
                 separatorBuilder:(_, __) => const Divider(), 
             ),
 
@@ -26,7 +26,7 @@ class Listview2Screen extends StatelessWidget {
     }
 }
 
-planetas(String planeta) {
+_planetas(String planeta) {
     return ListTile(
         // leading: const Icon( Icons.list_outlined ),
         title: Text(planeta),
